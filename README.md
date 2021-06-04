@@ -2,7 +2,7 @@
 Bot to notify when vaccine appointments are available.
 
 Supports checking Hy-Vee, Walgreens, CVS, Walmart, Cosentino's stores (KC), and Ball's stores (KC).
-Supports sending notifications to Slack, Discord, and [Twitter](https://twitter.com/kcvaccinewatch).
+Supports sending notifications to Slack, Discord, and Twitter.
 
 Notifications are sent when a location has appointments. No more notifications are sent for that location until it becomes unavailable again.
 
@@ -11,15 +11,6 @@ PRs welcome to support other clinics or notification methods.
 This project has no affiliation with any of the clinics mentioned.
 
 Walmart and Walgreens data courtesy of [covid-vaccine-spotter](https://github.com/GUI/covid-vaccine-spotter).
-
-## Example
-Slack
-
-<img src="https://user-images.githubusercontent.com/5343931/109823900-f4446f00-7bfd-11eb-8661-68167f013cf2.png" alt="Example of messages in Slack" width=500 />
-
-Twitter
-
-<img src="https://user-images.githubusercontent.com/5343931/109823499-9b74d680-7bfd-11eb-88f4-45743d824e57.png" alt="Example of messages in Twitter" width=500 />
 
 ## Setup
 1. [Install docker](https://docs.docker.com/get-docker/)
