@@ -1,0 +1,24 @@
+version: "3.9"
+services:
+  clock:
+    build: .
+    command: python clock.py
+    volumes:
+      - .:/app
+    links:
+      - redis
+    environment:
+      - REDIS_URL=redis://redis:6379
+    env_file:
+      - .env
+  redis:
+    image: "redis:alpine"
+    command: redis-server --appendonly yes
+    volumes:
+      - redis_data:/data
+    ports:
+      - "6379:6379"
+
+volumes:
+  redis_data:
+    driver: local
